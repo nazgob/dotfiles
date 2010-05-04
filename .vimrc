@@ -6,6 +6,7 @@ set et
 set sw=2
 set smarttab
 map <f2> :w\|!ruby1.9.1 %<cr>
+map <f3> :w\|!perl %<cr>
 
 set backspace=2
 
