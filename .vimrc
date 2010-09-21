@@ -1,29 +1,86 @@
-set nocompatible
+set nocompatible "come on, don't be silly
 
-syntax enable
-filetype indent on
-set et
-set sw=2
-set smarttab
-map <f2> :w\|!ruby1.9.1 %<cr>
-map <f3> :w\|!perl %<cr>
+"tab settings
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 
-set backspace=2
-
-set ruler
+"make things better
+set encoding=utf-8
+set scrolloff=3
+set autoindent
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest
+set visualbell
+set cursorline
 set number
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
 set cul
-set incsearch
+
+"leader key
+let mapleader = ","
+
+"searching/moving
+nnoremap / /\v
+vnoremap / /\v
 set ignorecase
 set smartcase
+set gdefault
+set incsearch
+set showmatch
 set hlsearch
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
+
+"long lines
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+
+"hjkl for life
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+"help key!
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+"nnoremap ; :
+
+"use jj to exit back to normal mode
+inoremap jj <ESC>
+
+"navigation over splits
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+set lisp
 
 colorscheme desert
 
-"ruby
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-"improve autocomplete menu color
-highlight Pmenu ctermbg=238 gui=bold
+if has ("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+
+nmap <leader>v :tabedit $MYVIMRC<cr>
+
