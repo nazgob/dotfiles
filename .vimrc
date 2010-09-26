@@ -1,6 +1,9 @@
-set nocompatible "come on, don't be silly
+"come on, don't be silly
+set nocompatible
 
-call pathogen#runtime_append_all_bundles() 
+filetype off
+call pathogen#runtime_append_all_bundles()
+filetype plugin indent on
 
 "tab settings
 set tabstop=2
