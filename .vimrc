@@ -1,9 +1,9 @@
 set nocompatible "come on, don't be silly
 
 "tab settings
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 "make things better
@@ -24,6 +24,9 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set cul
+set nobackup
+set nowritebackup
+set noswapfile
 
 "leader key
 let mapleader = ","
@@ -57,7 +60,7 @@ nnoremap j gj
 nnoremap k gk
 
 "help key!
-inoremap <F1> <ESC>
+noremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
@@ -75,11 +78,24 @@ nnoremap <C-l> <C-w>l
 
 set lisp
 
-colorscheme desert
+colorscheme mustang
 
 if has ("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
+  autocmd FileType make set noexpandtab
 endif
 
 nmap <leader>v :tabedit $MYVIMRC<cr>
+
+augroup filetype
+    au! BufRead,BufNewFile *.ll     set filetype=llvm
+augroup END
+
+augroup filetype
+    au! BufRead,BufNewFile *.td     set filetype=tablegen
+augroup END
+
+augroup filetype
+  au! BufRead,BufNewFile *Makefile* set filetype=make
+augroup END
 
