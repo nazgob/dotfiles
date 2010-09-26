@@ -1,5 +1,7 @@
 set nocompatible "come on, don't be silly
 
+call pathogen#runtime_append_all_bundles() 
+
 "tab settings
 set tabstop=2
 set shiftwidth=2
