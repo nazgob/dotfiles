@@ -7,6 +7,7 @@ set softtabstop=4
 set expandtab
 
 "make things better
+set guioptions=""
 set encoding=utf-8
 set scrolloff=3
 set autoindent
@@ -28,8 +29,6 @@ set cul
 let mapleader = ","
 
 "searching/moving
-nnoremap / /\v
-vnoremap / /\v
 set ignorecase
 set smartcase
 set gdefault
