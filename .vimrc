@@ -1,9 +1,9 @@
 "come on, don't be silly
 set nocompatible
 
-filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
+syntax on
 
 "tab settings
 set tabstop=2
@@ -81,7 +81,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-set lisp
+"set lisp
 
 colorscheme mustang
 
