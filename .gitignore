@@ -3,4 +3,5 @@
 *.o
 *.txt
 *.out
+.netrwhist
 .DS_Store
