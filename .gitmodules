@@ -10,3 +10,9 @@
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
   url = git://github.com/wincent/Command-T.git
+[submodule ".vim/bundle/vim-git"]
+	path = .vim/bundle/vim-git
+	url = git://github.com/tpope/vim-git
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive
