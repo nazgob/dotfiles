@@ -1,0 +1,28 @@
+Some config files for...
+========================
+- git
+- vim
+- ruby
+- bash
+
+Random tips:
+============
+
+git submodule init
+git submodule update
+
+cd dotfiles/.vim/bundle/Command-t/ruby/command-t
+ruby extconf.rb
+make
+
+ln -s ~/Projects/dotfiles/.vimrc ~/.vimrc
+ln -s ~/Projects/dotfiles/.vim ~/.vim
+
+Todo:
+=====
+
+write rakefile to do setup
+
+Author
+------
+Copyright (c) 2010 [Przemek Owczarek](http://twitter.com/powczarek), released under the MIT license
