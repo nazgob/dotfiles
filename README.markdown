@@ -19,10 +19,12 @@ Vim plugins:
 Random installation tips:
 ============
 
+- git clone git://github.com/nazgob/dotfiles.git
+- cd dotfiles
 - git submodule init
 - git submodule update
 
-- cd dotfiles/.vim/bundle/Command-t/ruby/command-t
+- cd .vim/bundle/command-t/ruby/command-t/
 - ruby extconf.rb
 - make
 
