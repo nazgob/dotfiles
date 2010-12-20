@@ -5,18 +5,29 @@ Some config files for...
 - ruby
 - bash
 
-Random tips:
+Vim plugins:
+============
+- command-t
+- nerdcommenter
+- nertree
+- vim-fugitive
+- vim-git
+- vim-rooter
+- vim-ruby
+- vim-rails
+
+Random installation tips:
 ============
 
-git submodule init
-git submodule update
+- git submodule init
+- git submodule update
 
-cd dotfiles/.vim/bundle/Command-t/ruby/command-t
-ruby extconf.rb
-make
+- cd dotfiles/.vim/bundle/Command-t/ruby/command-t
+- ruby extconf.rb
+- make
 
-ln -s ~/Projects/dotfiles/.vimrc ~/.vimrc
-ln -s ~/Projects/dotfiles/.vim ~/.vim
+- ln -s ~/Projects/dotfiles/.vimrc ~/.vimrc
+- ln -s ~/Projects/dotfiles/.vim ~/.vim
 
 Todo:
 =====

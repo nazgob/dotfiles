@@ -12,7 +12,7 @@ set softtabstop=2
 set expandtab
 
 "make things better
-set guioptions=""
+set guioptions=rh
 set encoding=utf-8
 set scrolloff=3
 set autoindent
