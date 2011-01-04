@@ -76,11 +76,11 @@ nnoremap <leader>q :NERDTreeToggle<cr>
 inoremap jj <ESC>
 
 "tabs
-nnoremap <leader>tt :tabnew<cr>
-nnoremap <leader>te :tabedit<space>
-nnoremap <leader>tc :tabclose<cr>
-nnoremap <leader>tn :tabnext<cr>
-nnoremap <leader>tp :tabprevious<cr>
+nnoremap <leader>nt :tabnew<cr>
+nnoremap <leader>ne :tabedit<space>
+nnoremap <leader>nc :tabclose<cr>
+nnoremap <leader>nn :tabnext<cr>
+nnoremap <leader>np :tabprevious<cr>
 
 "creating splits
 nnoremap <leader>w <C-w>v
