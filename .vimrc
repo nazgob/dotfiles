@@ -66,21 +66,27 @@ nnoremap j gj
 nnoremap k gk
 
 "help key!
-noremap <F1> <ESC>
+noremap  <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-"nnoremap ; :
+nnoremap <leader>q :NERDTreeToggle<cr>
 
 "use jj to exit back to normal mode
 inoremap jj <ESC>
 
+"creating splits
+nnoremap <leader>w <C-w>v
+nnoremap <leader>s <C-w>s
+
+"switching to last window
+nnoremap <leader>p <C-w>p
+
 "navigation over splits
-nnoremap <leader>w <C-w>v<C-w>l
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <leader>h <C-w>h
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
 
 "set lisp
 
