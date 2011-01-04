@@ -32,6 +32,7 @@ set cul
 set nobackup
 set nowritebackup
 set noswapfile
+set cpoptions+=$
 
 "leader key
 let mapleader = ","
