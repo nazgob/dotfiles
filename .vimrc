@@ -75,6 +75,13 @@ nnoremap <leader>q :NERDTreeToggle<cr>
 "use jj to exit back to normal mode
 inoremap jj <ESC>
 
+"tabs
+nnoremap <leader>tt :tabnew<cr>
+nnoremap <leader>te :tabedit<space>
+nnoremap <leader>tc :tabclose<cr>
+nnoremap <leader>tn :tabnext<cr>
+nnoremap <leader>tp :tabprevious<cr>
+
 "creating splits
 nnoremap <leader>w <C-w>v
 nnoremap <leader>s <C-w>s
