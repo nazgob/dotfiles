@@ -15,3 +15,5 @@ export BOOST_INC=/opt/local/var/macports/software/boost/1.44.0_0/opt/local/inclu
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
+alias grep="grep --color"
+
