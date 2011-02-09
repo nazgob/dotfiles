@@ -107,14 +107,6 @@ endif
 nmap <leader>v :tabedit $MYVIMRC<cr>
 
 augroup filetype
-    au! BufRead,BufNewFile *.ll     set filetype=llvm
-augroup END
-
-augroup filetype
-    au! BufRead,BufNewFile *.td     set filetype=tablegen
-augroup END
-
-augroup filetype
   au! BufRead,BufNewFile *Makefile* set filetype=make
 augroup END
 
