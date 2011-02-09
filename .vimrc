@@ -37,6 +37,9 @@ set cpoptions+=$
 "leader key
 let mapleader = ","
 
+"mappings
+command! W :w
+
 "searching/moving
 set ignorecase
 set smartcase
