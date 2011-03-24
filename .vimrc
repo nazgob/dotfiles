@@ -33,12 +33,16 @@ set nobackup
 set nowritebackup
 set noswapfile
 set cpoptions+=$
+set foldmethod=syntax
 
 "leader key
 let mapleader = ","
 
 "mappings
 command! W :w
+
+"remember marks
+set viminfo='100,f1
 
 "searching/moving
 set ignorecase
