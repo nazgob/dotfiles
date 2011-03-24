@@ -17,3 +17,9 @@ export BOOST_INC=/opt/local/var/macports/software/boost/1.45.0_2/opt/local/inclu
 
 alias grep="grep --color"
 
+
+export TERM="xterm-color"
+alias ls="ls -G"
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
