@@ -11,7 +11,7 @@ source ~/git-completion.bash
 PS1='[\W$(__git_ps1 " (%s)")]\$ '
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
-export BOOST_INC=/opt/local/var/macports/software/boost/1.45.0_2/opt/local/include
+export BOOST_INC=/opt/local/var/macports/software/boost/1.46.1/opt/local/include
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
