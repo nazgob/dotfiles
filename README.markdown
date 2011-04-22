@@ -15,6 +15,7 @@ Vim plugins:
 - vim-rooter
 - vim-ruby
 - vim-rails
+- vim-haml
 - vim-markdawn
 
 Random installation tips:
