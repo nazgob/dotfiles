@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
+[submodule ".vim/bundle/vim-irblack"]
+	path = .vim/bundle/vim-irblack
+	url = git://github.com/wgibbs/vim-irblack.git
