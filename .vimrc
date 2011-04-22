@@ -33,7 +33,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 set cpoptions+=$
-set foldmethod=syntax
+"set foldmethod=syntax
 
 "leader key
 let mapleader = ","
@@ -59,18 +59,6 @@ vnoremap <tab> %
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-
-"hjkl for life
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-nnoremap j gj
-nnoremap k gk
 
 "help key!
 noremap  <F1> <ESC>
@@ -103,8 +91,8 @@ nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
 
 "set lisp
-
 colorscheme mustang
+set t_Co=256
 
 if has ("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
