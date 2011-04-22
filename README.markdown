@@ -17,6 +17,7 @@ Vim plugins:
 - vim-rails
 - vim-haml
 - vim-markdawn
+- vim-javascript
 
 Random installation tips:
 -------------------------
