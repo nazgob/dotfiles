@@ -20,7 +20,8 @@ set showmode
 set showcmd
 set hidden
 set wildmenu
-set wildmode=list:longest
+set wildmode=list:longest,list:full
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn
 set visualbell
 set cursorline
 set number
@@ -90,9 +91,10 @@ nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
 
-"set lisp
 colorscheme mustang
 set t_Co=256
+
+let g:CommandTMaxHeight=20
 
 if has ("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
@@ -103,5 +105,7 @@ nmap <leader>v :tabedit $MYVIMRC<cr>
 
 augroup filetype
   au! BufRead,BufNewFile *Makefile* set filetype=make
+  au! BufRead,BufNewFile {Gemfile,Rakefile,config.ru} set ft=ruby
+  au! BufNewFile,BufRead *.json set ft=javascript
 augroup END
 
