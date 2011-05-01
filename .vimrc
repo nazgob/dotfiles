@@ -39,8 +39,12 @@ set cpoptions+=$
 "leader key
 let mapleader = ","
 
-"mappings
-command! W :w
+"shift key fixes
+cmap W w
+cmap WQ wq
+cmap wQ wq
+cmap Q q
+cmap Tabe tabe
 
 "remember marks
 set viminfo='100,f1
