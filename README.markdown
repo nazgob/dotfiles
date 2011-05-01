@@ -12,6 +12,7 @@ Vim plugins:
 - nertree
 - vim-fugitive
 - vim-git
+- vim-gitv
 - vim-rooter
 - vim-ruby
 - vim-rails
