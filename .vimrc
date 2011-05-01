@@ -46,6 +46,10 @@ cmap wQ wq
 cmap Q q
 cmap Tabe tabe
 
+"visual shifting
+vnoremap < <gv
+vnoremap > >gv
+
 "remember marks
 set viminfo='100,f1
 
