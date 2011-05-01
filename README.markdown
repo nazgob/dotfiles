@@ -30,6 +30,7 @@ Random installation tips:
 7. `make`  
 8. `ln -s ~/Projects/dotfiles/.vimrc ~/.vimrc`  
 9. `ln -s ~/Projects/dotfiles/.vim ~/.vim`  
+9. `ln -s ~/Projects/dotfiles/.gemrc ~/.gemrc`  
 
 Author:
 ------
