@@ -16,10 +16,12 @@ export BOOST_INC=/opt/local/var/macports/software/boost/1.46.1/opt/local/include
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 alias grep="grep --color"
-
+alias ls="ls -G"
+alias r="rake"
+alias g="git"
+alias v="mvim -v"
 
 export TERM="xterm-color"
-alias ls="ls -G"
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
