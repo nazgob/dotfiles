@@ -99,6 +99,7 @@ nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
 
+set background=dark
 colorscheme mustang
 set t_Co=256
 
