@@ -34,7 +34,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 set cpoptions+=$
-"set foldmethod=syntax
+set listchars=tab:▸\ ,eol:¬
 
 "leader key
 let mapleader = ","
