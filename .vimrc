@@ -83,8 +83,8 @@ inoremap jj <ESC>
 nnoremap <leader>nt :tabnew<cr>
 nnoremap <leader>ne :tabedit<space>
 nnoremap <leader>nc :tabclose<cr>
-nnoremap <leader>nn :tabnext<cr>
-nnoremap <leader>np :tabprevious<cr>
+nnoremap <leader>= :tabnext<cr>
+nnoremap <leader>- :tabprevious<cr>
 
 "creating splits
 nnoremap <leader>w <C-w>v
