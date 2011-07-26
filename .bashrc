@@ -1,9 +1,6 @@
 export PS1="\w>"
 set bell-style visible
 
-export PATH="$PATH:~/Projects/git-achievements"
-alias git="git-achievements"
-
 # Git tab completion
 source ~/git-completion.bash
 
@@ -17,9 +14,20 @@ export BOOST_INC=/opt/local/var/macports/software/boost/1.46.1/opt/local/include
 
 alias grep="grep --color"
 alias ls="ls -G"
-alias r="rake"
+alias h="history"
+alias r="bin/rake"
 alias g="git"
+alias s="git status"
 alias v="mvim -v"
+
+#fs stuff
+alias fs="cd ~/Projects/future_simple"
+alias pj="cd ~/Projects/future_simple/pipejump-web-rails3"
+alias core="cd ~/Projects/future_simple/core"
+
+#mysql
+alias mysql="/usr/local/mysql/bin/mysql"
+alias mysqladmin="/usr/local/mysql/bin/mysqladmin"
 
 export TERM="xterm-color"
 export CLICOLOR=1

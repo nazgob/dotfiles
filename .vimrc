@@ -38,6 +38,8 @@ set listchars=tab:▸\ ,eol:¬
 
 "leader key
 let mapleader = ","
+let g:EasyMotion_leader_key = '\'
+"let g:EasyMotion_leader_key = '<Leader>m'
 
 "shift key fixes
 cmap W w
