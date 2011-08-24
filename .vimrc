@@ -92,9 +92,6 @@ nnoremap <leader>- :tabprevious<cr>
 nnoremap <leader>w <C-w>v
 nnoremap <leader>s <C-w>s
 
-"switching to last window
-nnoremap <leader>p <C-w>p
-
 "navigation over splits
 nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
