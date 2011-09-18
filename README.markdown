@@ -27,12 +27,13 @@ Random installation tips:
 3. `git submodule init`  
 4. `git submodule update`  
 5. `cd .vim/bundle/command-t/ruby/command-t/`  
-6. `ruby extconf.rb`  
-7. `make`  
-8. `ln -s ~/Projects/dotfiles/.vimrc ~/.vimrc`  
-9. `ln -s ~/Projects/dotfiles/.vim ~/.vim`  
-9. `ln -s ~/Projects/dotfiles/.gemrc ~/.gemrc`  
+6. `rvm system`  
+7. `ruby extconf.rb`  
+8. `make`  
+9. `ln -s ~/Projects/dotfiles/.vimrc ~/.vimrc`  
+10. `ln -s ~/Projects/dotfiles/.vim ~/.vim`  
+11. `ln -s ~/Projects/dotfiles/.gemrc ~/.gemrc`  
 
 Author:
 ------
-Copyright (c) 2010 [Przemek Owczarek](http://twitter.com/powczarek), released under the MIT license
+Copyright (c) 2010-2012 [Przemek Owczarek](http://twitter.com/powczarek), released under the MIT license
