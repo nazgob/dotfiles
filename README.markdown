@@ -27,6 +27,7 @@ Vim plugins:
 
 Random installation tips:
 -------------------------
+0. some plugins might be not be added as proper git submodule
 1. `git clone git://github.com/nazgob/dotfiles.git`  
 2. `cd dotfiles`  
 3. `git submodule init`  
