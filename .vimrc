@@ -2,8 +2,10 @@
 set nocompatible
 
 call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
 syntax on
+filetype on
+filetype indent on
+filetype plugin on
 
 "tab settings
 set tabstop=2
@@ -34,12 +36,13 @@ set nobackup
 set nowritebackup
 set noswapfile
 set cpoptions+=$
+
+"invisible stuff
+"set list
 set listchars=tab:▸\ ,eol:¬
 
 "leader key
 let mapleader = ","
-let g:EasyMotion_leader_key = '\'
-"let g:EasyMotion_leader_key = '<Leader>m'
 
 "shift key fixes
 cmap W w
@@ -47,6 +50,8 @@ cmap WQ wq
 cmap wQ wq
 cmap Q q
 cmap Tabe tabe
+nore ; :
+nore , ;
 
 "visual shifting
 vnoremap < <gv
@@ -81,13 +86,6 @@ nnoremap <leader>q :NERDTreeToggle<cr>
 "use jj to exit back to normal mode
 inoremap jj <ESC>
 
-"tabs
-nnoremap <leader>nt :tabnew<cr>
-nnoremap <leader>ne :tabedit<space>
-nnoremap <leader>nc :tabclose<cr>
-nnoremap <leader>= :tabnext<cr>
-nnoremap <leader>- :tabprevious<cr>
-
 "creating splits
 nnoremap <leader>w <C-w>v
 nnoremap <leader>s <C-w>s
@@ -99,8 +97,10 @@ nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
 
 set background=dark
-colorscheme mustang
+colorscheme ir_black
 set t_Co=256
+set guifont=Menlo:h18
+set lines=35 columns=120
 
 let g:CommandTMaxHeight=20
 

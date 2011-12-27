@@ -8,24 +8,24 @@ source ~/git-completion.bash
 PS1='[\W$(__git_ps1 " (%s)")]\$ '
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
-#export BOOST_INC=/opt/local/var/macports/software/boost/1.46.1/opt/local/include
-
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-
 alias grep="grep --color"
 alias ls="ls -G"
 alias h="history"
 alias r="bin/rake"
 alias g="git"
 alias s="git status"
-alias v="mvim -v"
+alias p="git pull --rebase && bundle"
+alias v="mvim --remote-tab-silent"
 
 #fs stuff
 alias fs="cd ~/projects/futuresimple"
-alias pj="cd ~/projects/futuresimple/pipejump-web-rails3"
+alias pj="cd ~/projects/futuresimple/sales"
+alias sales="cd ~/projects/futuresimple/sales"
+alias sync="cd ~/projects/futuresimple/syncable"
 alias core="cd ~/projects/futuresimple/core"
-
-#export TERM="xterm-color"
-#export CLICOLOR=1
-#export LSCOLORS=ExFxCxDxBxegedabagacad
+alias common="cd ~/projects/futuresimple/common"
+alias crm="cd ~/projects/futuresimple/crm"
+alias tags="cd ~/projects/futuresimple/tags"
+alias tiramisu="cd ~/projects/futuresimple/tiramisu"
+alias portal="cd ~/projects/futuresimple/portal"
 
