@@ -7,18 +7,23 @@ Some config files for...
 
 Vim plugins:
 ------------
+- ack.vim
 - command-t
 - nerdcommenter
-- nertree
+- nerdtree
+- supertab
+- vim-endwise
 - vim-fugitive
-- vim-git
-- vim-gitv
+- vim-haml
+- vim-irblack
+- vim-javascript
+- vim-markdown
+- vim-rails
+- vim-repeat
 - vim-rooter
 - vim-ruby
-- vim-rails
-- vim-haml
-- vim-markdawn
-- vim-javascript
+- vim-surround
+- vim-unimpaired
 
 Random installation tips:
 -------------------------
