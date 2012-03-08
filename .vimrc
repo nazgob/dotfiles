@@ -1,7 +1,6 @@
 "come on, don't be silly
 set nocompatible
 
-call pathogen#runtime_append_all_bundles()
 syntax on
 filetype on
 filetype indent on
@@ -53,6 +52,9 @@ cmap Tabe tabe
 nore ; :
 nore , ;
 
+"tags
+set tags=./tags;
+
 "visual shifting
 vnoremap < <gv
 vnoremap > >gv
@@ -80,8 +82,6 @@ set formatoptions=qrn1
 noremap  <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
-
-nnoremap <leader>q :NERDTreeToggle<cr>
 
 "use jj to exit back to normal mode
 inoremap jj <ESC>

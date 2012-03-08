@@ -13,9 +13,11 @@ alias ls="ls -G"
 alias h="history"
 alias r="bin/rake"
 alias g="git"
-alias s="git status"
+alias s="git status -s --branch"
 alias p="git pull --rebase && bundle"
 alias v="mvim --remote-tab-silent"
+
+alias tag="ctags -R --exclude=.git --exclude=coverage --exclude=log *"
 
 #fs stuff
 alias fs="cd ~/projects/futuresimple"
@@ -28,4 +30,6 @@ alias crm="cd ~/projects/futuresimple/crm"
 alias tags="cd ~/projects/futuresimple/tags"
 alias tiramisu="cd ~/projects/futuresimple/tiramisu"
 alias portal="cd ~/projects/futuresimple/portal"
+alias rails="cd ~/projects/rails"
 
+alias ctags='/usr/local/bin/ctags'
