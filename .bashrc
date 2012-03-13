@@ -30,6 +30,6 @@ alias crm="cd ~/projects/futuresimple/crm"
 alias tags="cd ~/projects/futuresimple/tags"
 alias tiramisu="cd ~/projects/futuresimple/tiramisu"
 alias portal="cd ~/projects/futuresimple/portal"
-alias rails="cd ~/projects/rails"
+alias revolver="cd ~/projects/futuresimple/revolver"
 
 alias ctags='/usr/local/bin/ctags'
