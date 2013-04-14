@@ -13,6 +13,7 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
 alias grep="grep --color"
 alias ls="ls -G"
+alias a="ls -lrthG"
 alias h="history"
 alias r="bin/rake"
 alias g="git"
@@ -20,6 +21,8 @@ alias s="git status --short"
 alias l="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gg="git grep --color"
 alias gd="git diff --color"
+alias gp="git pull --rebase"
+alias gcm="git commit -m"
 #alias v="mvim --remote-tab-silent"
 alias v="mvim -v"
 
