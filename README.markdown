@@ -6,4 +6,4 @@ Some config files for...
 
 Author:
 ------
-Copyright (c) 2010-2012 [Przemek Owczarek](http://twitter.com/powczarek), released under the MIT license
+Copyright (c) 2010-2013 [Przemek Owczarek](http://twitter.com/powczarek), released under the MIT license
