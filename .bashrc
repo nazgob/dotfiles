@@ -4,9 +4,6 @@ set bell-style visible
 # Git tab completion
 source ~/.git-completion.bash
 
-# FS helpers
-source ~/.base_profile.bash
-
 # Show branch in status line
 PS1='[\W$(__git_ps1 " (%s)")]\$ '
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
