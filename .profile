@@ -1,6 +1,6 @@
-[ -f ~/Projects/dotfiles/.bashrc ] && source ~/Projects/dotfiles/.bashrc
-[ -f ~/Projects/dotfiles/.alias ] && source ~/Projects/dotfiles/.alias
-[ -f ~/Projects/dotfiles/.git-completion.bash ] && source ~/Projects/dotfiles/.git-completion.bash
+source ~/dotfiles/.bashrc
+source ~/dotfiles/.alias
+source ~/dotfiles/.git-completion.bash
 
 if [[ "$OSTYPE" == "linux-gnu" ]]
 then
