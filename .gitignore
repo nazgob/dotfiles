@@ -3,5 +3,6 @@
 *.o
 *.txt
 *.out
+*.rdb
 .netrwhist
 .DS_Store
