@@ -10,3 +10,5 @@ export HISTSIZE=10000
 
 shopt -s histappend
 export PROMPT_COMMAND='history -a'
+
+export CLICOLOR=1
