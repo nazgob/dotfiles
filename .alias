@@ -14,3 +14,9 @@ alias v="vim"
 alias rs="bin/rspec spec"
 
 alias tag="ctags -R --exclude=.git --exclude=coverage --exclude=log *"
+
+#vms
+alias sync="cd /var/www/cosmic-sync"
+alias crm="cd /var/www/crm"
+alias core="cd /var/www/core"
+
