@@ -7,3 +7,9 @@ then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
+
+function b {
+  cd ~/Projects/vms/base_machine
+  vagrant ssh
+}
+
