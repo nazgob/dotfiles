@@ -3,6 +3,7 @@ Some config files for...
 - git
 - ruby
 - bash
+- vim
 
 Author:
 ------
