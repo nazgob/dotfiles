@@ -18,10 +18,11 @@ Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-endwise'
 Bundle 'bling/vim-airline'
-Bundle 'scrooloose/nerdtree'
 Bundle 'vim-jp/cpp-vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'thoughtbot/vim-rspec'
+"Bundle 'thoughtbot/vim-rspec'
+Bundle 'benmills/vimux'
+Bundle 'skalnik/vim-vroom'
+
 
 function! ToggleBackground()
   if &background == 'dark'
@@ -108,6 +109,11 @@ set autoread
 set autowrite
 
 let mapleader = " "
+
+" tmux
+let vroom_use_vimux = 1
+map <Leader>vq :VimuxCloseRunner<CR>
+map <Leader>vz :VimuxZoomRunner<CR>
 
 " Edit this very file
 nmap <leader>v :tabedit $MYVIMRC<cr>
