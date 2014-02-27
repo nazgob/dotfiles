@@ -12,3 +12,5 @@ shopt -s histappend
 export PROMPT_COMMAND='history -a'
 
 export CLICOLOR=1
+
+export PATH=$PATH:~/bin
