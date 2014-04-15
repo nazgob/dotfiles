@@ -24,4 +24,5 @@ alias core="cd /var/www/core"
 alias common="cd /var/www/common"
 alias leads="cd /var/www/leads"
 alias sales="cd /var/www/sales"
+alias mailman="cd /var/www/mailman"
 
