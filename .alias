@@ -15,6 +15,7 @@ alias rs="bin/rspec spec"
 
 alias tag="ctags -R --exclude=.git --exclude=coverage --exclude=log *"
 alias redis='/home/vagrant/cellar/bin/redis-server /home/vagrant/cellar/bin/redis.conf'
+alias rabbit='rabbitmq-server -detached'
 
 #vms
 alias sync="cd /var/www/cosmic-sync"
