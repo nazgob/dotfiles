@@ -26,4 +26,5 @@ alias tags="cd /var/www/tags"
 alias leads="cd /var/www/leads"
 alias sales="cd /var/www/sales"
 alias mailman="cd /var/www/mailman"
+alias continuum="cd /var/www/continuum"
 
