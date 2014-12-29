@@ -7,8 +7,9 @@ export EDITOR='vim'
 if [[ "$OSTYPE" == "linux-gnu" ]]
 then
   export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)"
 fi
+
+eval "$(rbenv init -)"
 
 function b {
   cd ~/Projects/vms/base_machine
