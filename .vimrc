@@ -19,11 +19,8 @@ Bundle 'tpope/vim-endwise'
 Bundle 'bling/vim-airline'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
-
-"Bundle 'thoughtbot/vim-rspec'
-Bundle 'benmills/vimux'
-Bundle 'skalnik/vim-vroom'
-
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-notes'
 
 function! ToggleBackground()
   if &background == 'dark'
@@ -134,8 +131,8 @@ nnoremap <leader><leader> <c-^>
 nmap <leader>w :w<cr>
 " Copy to system clipboard
 map <leader>y "y
-" Open split with notes
-map <leader>x :tabnew ~/Dropbox/notes<cr>
+
+
 " Bubble single lines
 nmap <C-Up> [e
 nmap <C-Down> ]e
@@ -146,6 +143,10 @@ vmap <C-Down> ]egv
 nmap <F8> :TagbarToggle<CR>
 " Run all specs
 map <leader>a :call RunAllSpecs()<CR>
+
+" vim notes
+let g:notes_directories = ['~/Dropbox/notes']
+let g:notes_suffix = '.txt'
 
 set wildignore=*.o,*.out,*.obj,.git,*.rbc,*.class,.svn,*.gem
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
