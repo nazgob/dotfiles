@@ -11,7 +11,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tsaleh/vim-supertab'
 Bundle 'airblade/vim-rooter'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'wgibbs/vim-irblack'
+" Bundle 'wgibbs/vim-irblack'
+Bundle 'whatyouhide/vim-gotham'
 Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-unimpaired'
@@ -37,7 +38,7 @@ endfunction
 syntax enable
 set background=light
 
-colorscheme solarized
+colorscheme gotham
 
 if has('gui_running')
   set t_Co=256
