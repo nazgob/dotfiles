@@ -162,6 +162,7 @@ endif
 augroup filetype
   au! BufRead,BufNewFile *Makefile* set filetype=make
   au! BufNewFile,BufRead *.json set ft=javascript
+  au! BufNewFile,BufRead *.hql set ft=sql
   au! BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,Capfile,config.ru,.railsrc,.irbrc,.pryrc} set ft=ruby
 augroup END
 
