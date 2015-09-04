@@ -33,7 +33,7 @@ endfunction
 syntax enable
 set background=light
 
-colorscheme gotham
+colorscheme solarized
 
 if has('gui_running')
   set t_Co=256
