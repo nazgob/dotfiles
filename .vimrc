@@ -37,7 +37,7 @@ colorscheme solarized
 
 if has('gui_running')
   set t_Co=256
-  set guifont=Menlo:h18
+  set guifont=AnonymousPro:h18
   set lines=40 columns=120
 else
   set t_Co=256
