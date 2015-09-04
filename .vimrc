@@ -145,7 +145,7 @@ nmap <F8> :TagbarToggle<CR>
 map <leader>a :call RunAllSpecs()<CR>
 
 " vim notes
-let g:notes_directories = ['~/Dropbox/notes']
+let g:notes_directories = ['~/DropboxPrivate/notes']
 let g:notes_suffix = '.txt'
 
 set wildignore=*.o,*.out,*.obj,.git,*.rbc,*.class,.svn,*.gem
