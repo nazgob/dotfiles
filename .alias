@@ -11,7 +11,7 @@ alias gp="git pull --rebase"
 alias ga="git add ."
 alias gcm="git commit -am"
 alias v="vim"
-alias rs="bin/rspec spec"
+alias rs="bundle exec rspec spec"
 
 alias tag="ctags -R --exclude=.git --exclude=coverage --exclude=log *"
 alias redis='/home/vagrant/cellar/bin/redis-server /home/vagrant/cellar/bin/redis.conf'
