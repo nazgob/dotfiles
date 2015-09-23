@@ -28,4 +28,5 @@ alias sales="cd /var/www/sales"
 alias mailman="cd /var/www/mailman"
 alias continuum="cd /var/www/continuum"
 alias forcefield="cd /var/www/forcefield"
+alias syncforce="cd /var/www/syncforce"
 
