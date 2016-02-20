@@ -1,5 +1,4 @@
 alias grep="grep --color"
-alias ls="ls -lhG"
 alias h="history"
 alias g="git"
 alias s="git status --short"
@@ -29,4 +28,11 @@ alias mailman="cd /var/www/mailman"
 alias continuum="cd /var/www/continuum"
 alias forcefield="cd /var/www/forcefield"
 alias syncforce="cd /var/www/syncforce"
+
+if [[ "$OSTYPE" == "linux-gnu" ]]
+then
+  alias ls="ls -lh --color"
+else
+  alias ls="ls -lhG"
+fi
 
