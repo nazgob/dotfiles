@@ -21,7 +21,6 @@ Bundle 'bling/vim-airline'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-notes'
 
 function! ToggleBackground()
   if &background == 'dark'
