@@ -97,8 +97,6 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set cul
-set nobackup
-set nowritebackup
 set noswapfile
 set cpoptions+=$
 set nowrap
@@ -171,3 +169,10 @@ filetype plugin indent on
 let g:ctrlp_custom_ignore = 'build\|.agility-shared\|.git'
 
 autocmd BufWritePre *.rb :%s/\s\+$//e
+
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupskip=/tmp/*,/private/tmp/*
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set writebackup
+
