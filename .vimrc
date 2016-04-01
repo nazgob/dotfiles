@@ -17,10 +17,12 @@ Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-sleuth'
 Bundle 'bling/vim-airline'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 Bundle 'xolox/vim-misc'
+
 
 function! ToggleBackground()
   if &background == 'dark'
@@ -157,12 +159,21 @@ if has ("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
-augroup filetype
-  au! BufRead,BufNewFile *Makefile* set filetype=make
-  au! BufNewFile,BufRead *.json set ft=javascript
-  au! BufNewFile,BufRead *.hql set ft=sql
-  au! BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,Capfile,config.ru,.railsrc,.irbrc,.pryrc} set ft=ruby
-augroup END
+" augroup filetype
+"   au! BufRead,BufNewFile *Makefile* set filetype=make
+"   au! BufNewFile,BufRead *.json set ft=javascript
+"   au! BufNewFile,BufRead *.hql set ft=sql
+"   au! BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,Capfile,config.ru,.railsrc,.irbrc,.pryrc} set ft=ruby
+" augroup END
+
+" " python bullshit
+" autocmd BufNewFile,BufRead *.py
+"     \ setlocal tabstop=4
+"     \ setlocal softtabstop=4
+"     \ setlocal shiftwidth=4
+"     \ setlocal textwidth=80
+"     \ setlocal smarttab
+"     \ setlocal expandtab
 
 filetype plugin indent on
 
