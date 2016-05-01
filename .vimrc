@@ -19,8 +19,9 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-sleuth'
 Bundle 'bling/vim-airline'
-Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
+Bundle 'tpope/vim-salve'
+Bundle 'tpope/vim-dispatch'
 Bundle 'xolox/vim-misc'
 
 
