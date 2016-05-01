@@ -5,12 +5,15 @@ set bell-style visible
 PS1='[\W$(__git_ps1 " (%s)")]\$ '
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
-export HISTFILESIZE=10000
-export HISTSIZE=10000
-
-shopt -s histappend
-export PROMPT_COMMAND='history -a'
-
 export CLICOLOR=1
 
 export PATH=$PATH:~/bin
+
+if [[ "$OSTYPE" == "darwin15" && $(brew --prefix)/etc/bash_completion ]]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+if [ -f ~/dotfiles/sensible.bash ]; then
+  source ~/dotfiles/sensible.bash
+fi
+
