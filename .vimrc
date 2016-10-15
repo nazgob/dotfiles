@@ -4,9 +4,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'pangloss/vim-javascript'
-Bundle 'nono/vim-handlebars'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tsaleh/vim-supertab'
 Bundle 'airblade/vim-rooter'
@@ -23,7 +20,6 @@ Bundle 'tpope/vim-fireplace'
 Bundle 'tpope/vim-salve'
 Bundle 'tpope/vim-dispatch'
 Bundle 'xolox/vim-misc'
-
 
 function! ToggleBackground()
   if &background == 'dark'
