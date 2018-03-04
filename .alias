@@ -6,9 +6,6 @@ alias l="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s
 alias gg="git grep --color"
 alias gd="git diff --color"
 alias gdc="git diff --cached --color"
-alias gp="git pull --rebase"
-alias ga="git add ."
-alias gcm="git commit -am"
 alias v="vim"
 alias rs="bundle exec rspec spec"
 
@@ -18,16 +15,13 @@ alias rabbit='rabbitmq-server -detached'
 
 #vms
 alias sync="cd /var/www/cosmic-sync"
+alias proxy="cd /var/www/cosmic-proxy"
 alias crm="cd /var/www/crm"
 alias core="cd /var/www/core"
 alias common="cd /var/www/common"
 alias tags="cd /var/www/tags"
 alias leads="cd /var/www/leads"
 alias sales="cd /var/www/sales"
-alias mailman="cd /var/www/mailman"
-alias continuum="cd /var/www/continuum"
-alias forcefield="cd /var/www/forcefield"
-alias syncforce="cd /var/www/syncforce"
 
 if [[ "$OSTYPE" == "linux-gnu" ]]
 then
