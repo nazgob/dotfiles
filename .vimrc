@@ -2,46 +2,23 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rails'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tsaleh/vim-supertab'
 Bundle 'airblade/vim-rooter'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'whatyouhide/vim-gotham'
-Bundle 'mileszs/ack.vim'
+Bundle 'nazgob/grb256'
+Bundle 'ervandew/supertab'
+Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-sleuth'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-airline/vim-airline'
-Bundle 'tpope/vim-fireplace'
-Bundle 'tpope/vim-salve'
-Bundle 'tpope/vim-dispatch'
-Bundle 'xolox/vim-misc'
-
-function! ToggleBackground()
-  if &background == 'dark'
-    set background=light
-  else
-    set background=dark
-  endif
-endfunction
+Bundle 'vim-ruby/vim-ruby'
 
 syntax enable
 set background=dark
-
-colorscheme solarized
-
-if has('gui_running')
-  set t_Co=256
-  set guifont=AnonymousPro:h18
-  set lines=40 columns=120
-else
-  set t_Co=256
-endif
-
+set t_Co=256
+colorscheme grb256
 
 "tab settings
 set tabstop=2
@@ -105,21 +82,12 @@ set autowrite
 
 let mapleader = " "
 
-" tmux
-let vroom_use_vimux = 1
-map <Leader>vq :VimuxCloseRunner<CR>
-map <Leader>vz :VimuxZoomRunner<CR>
-
 " Edit this very file
 nmap <leader>v :tabedit $MYVIMRC<cr>
 " Look for files
 nmap <leader>f <c-p>
-" Light vs Dark Solarized
-map  <leader>n :call ToggleBackground()<cr>
 " Clear trailing spaces with F5
 noremap <F5> :%s/\s\+$<CR>:w<CR>
-" Insert hashrocket with <c-l>
-imap <c-l> <space>=><space>
  "Clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<cr>
 " Switch between the last two files
@@ -136,14 +104,6 @@ nmap <C-Down> ]e
 " Bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
-" Open/Hide TagBar
-nmap <F8> :TagbarToggle<CR>
-" Run all specs
-map <leader>a :call RunAllSpecs()<CR>
-
-" vim notes
-let g:notes_directories = ['~/DropboxPrivate/notes']
-let g:notes_suffix = '.txt'
 
 set wildignore=*.o,*.out,*.obj,.git,*.rbc,*.class,.svn,*.gem
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
@@ -155,22 +115,6 @@ set wildignore+=*.swp,*~,._*
 if has ("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
-
-" augroup filetype
-"   au! BufRead,BufNewFile *Makefile* set filetype=make
-"   au! BufNewFile,BufRead *.json set ft=javascript
-"   au! BufNewFile,BufRead *.hql set ft=sql
-"   au! BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,Capfile,config.ru,.railsrc,.irbrc,.pryrc} set ft=ruby
-" augroup END
-
-" " python bullshit
-" autocmd BufNewFile,BufRead *.py
-"     \ setlocal tabstop=4
-"     \ setlocal softtabstop=4
-"     \ setlocal shiftwidth=4
-"     \ setlocal textwidth=80
-"     \ setlocal smarttab
-"     \ setlocal expandtab
 
 filetype plugin indent on
 
