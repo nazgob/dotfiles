@@ -15,7 +15,10 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-if [ -f ~/dotfiles/sensible.bash ]; then
-  source ~/dotfiles/sensible.bash
+source /usr/local/git/contrib/completion/git-completion.bash
+source /usr/local/git/contrib/completion/git-prompt.sh
+
+if [ -f ~/dotfiles/projects/sensible.bash ]; then
+  source ~/projects/dotfiles/sensible.bash
 fi
 
