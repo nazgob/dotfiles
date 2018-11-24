@@ -10,5 +10,3 @@ then
 fi
 
 eval "$(rbenv init -)"
-
-export PATH="/Applications/Racket v6.6/bin/:$PATH"
