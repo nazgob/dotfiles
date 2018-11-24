@@ -11,11 +11,6 @@ fi
 
 eval "$(rbenv init -)"
 
-function b {
-  cd ~/Projects/vms/base_machine
-  vagrant ssh
-}
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Applications/Racket v6.6/bin/:$PATH"
