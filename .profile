@@ -11,7 +11,4 @@ fi
 
 eval "$(rbenv init -)"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Applications/Racket v6.6/bin/:$PATH"
-
