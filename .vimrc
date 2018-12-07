@@ -19,6 +19,10 @@ else
   call minpac#add('tpope/vim-unimpaired')
 endif
 
+command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
+command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
+command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
+
 syntax enable
 set background=dark
 set t_Co=256

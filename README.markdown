@@ -6,9 +6,15 @@ Some config files for...
 - vim
 
 ```bash
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git clone https://github.com/k-takata/minpac.git ~/.vim/pack/minpac/opt/minpack
 ```
+
+minpac:
+=======
+- PackUpdate
+- PackClean
+- PackStatus
 
 Author:
 ------
-Copyright (c) 2010-2014 [Przemek Owczarek](http://twitter.com/powczarek), released under the MIT license
+Copyright (c) 2010-2019 [Przemek Owczarek](http://twitter.com/powczarek), released under the MIT license
