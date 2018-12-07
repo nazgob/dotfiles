@@ -1,25 +1,15 @@
 alias grep="grep --color"
 alias h="history"
-alias g="git"
 alias s="git status --short"
 alias l="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit | head -n 25"
 alias gg="git grep --color"
 alias gd="git diff --color"
-alias gdc="git diff --cached --color"
 alias v="vim"
 alias rs="bundle exec rspec spec"
+alias i="cd ~/icloud"
 
-alias tag="ctags -R --exclude=.git --exclude=coverage --exclude=log *"
-alias redis='/home/vagrant/cellar/bin/redis-server /home/vagrant/cellar/bin/redis.conf'
-alias rabbit='rabbitmq-server -detached'
+alias sync="cd ~/projects/cosmic-sync"
+alias proxy="cd ~/projects/cosmic-proxy"
 
-alias sync="cd /Users/powczarek/projects/cosmic-sync"
-alias proxy="cd /Users/powczarek/projects/cosmic-proxy"
-
-if [[ "$OSTYPE" == "linux-gnu" ]]
-then
-  alias ls="ls -lh --color"
-else
-  alias ls="ls -lhG"
-fi
+alias ls="ls -lhG"
 
