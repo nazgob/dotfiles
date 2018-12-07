@@ -1,19 +1,23 @@
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+packadd minpac
 
-Bundle 'gmarik/vundle'
-Bundle 'airblade/vim-rooter'
-Bundle 'nazgob/grb256'
-Bundle 'ervandew/supertab'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-sleuth'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'vim-airline/vim-airline'
-Bundle 'vim-ruby/vim-ruby'
+if !exists('*minpac#init')
+  " minpac is not available.
+else
+  call minpac#init()
+  call minpac#add('k-takata/minpac', {'type': 'opt'})
+  call minpac#add('kien/ctrlp.vim')
+  call minpac#add('vim-ruby/vim-ruby')
+  call minpac#add('ervandew/supertab')
+  call minpac#add('airblade/vim-rooter')
+  call minpac#add('nazgob/grb256')
+  call minpac#add('vim-airline/vim-airline')
+  call minpac#add('tpope/vim-fugitive')
+  call minpac#add('tpope/vim-endwise')
+  call minpac#add('tpope/vim-commentary')
+  call minpac#add('tpope/vim-rails')
+  call minpac#add('tpope/vim-sleuth')
+  call minpac#add('tpope/vim-unimpaired')
+endif
 
 syntax enable
 set background=dark
@@ -28,7 +32,7 @@ set expandtab
 
 "invisible stuff
 set list
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:..,trail:_
 
 "shift key fixes
 cmap W w
@@ -127,4 +131,3 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
-
