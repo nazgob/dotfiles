@@ -5,12 +5,9 @@ alias l="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s
 alias gg="git grep --color"
 alias gd="git diff --color"
 alias v="vim"
-alias rs="bundle exec rspec spec"
 alias i="cd ~/icloud"
 alias p="cd ~/projects"
 
-alias sync="cd ~/projects/cosmic-sync"
-alias proxy="cd ~/projects/cosmic-proxy"
 
 alias ls="ls -lhG"
 
