@@ -6,7 +6,7 @@ Some config files for...
 - vim
 
 ```bash
-git clone https://github.com/k-takata/minpac.git ~/.vim/pack/minpac/opt/minpack
+git clone https://github.com/k-takata/minpac.git ~/.vim/pack/minpac/opt/minpac
 ```
 
 minpac:
